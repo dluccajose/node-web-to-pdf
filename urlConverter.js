@@ -30,7 +30,7 @@ async function urlToImage(url, options, path) {
 async function urlToPDF(url, {
     puppeteerOptions,
     pdfOptions,
-    sleepTime = 3000,
+    sleepTime = 0,
     emulateMediaType = 'screen' 
 } = {}) 
 {
