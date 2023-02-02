@@ -1,3 +1,26 @@
-<div>
-    Download your PDF: {{ pdfUrl }}
+<style>
+    .download-content {
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+        background: whitesmoke;
+    }
+</style>
+
+<div class="row download-content">
+<div class="col">
+    <div class="row">
+        <div class="col text-center">
+            <h3>La pagina web ha sido convertida a un archivo pdf, abajo encontraras el enlace para descargarlo</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <a target="_blank" class="aheto-btn aheto-btn--shadow" href="{{ pdfUrl }}">
+                Descargar PDF
+            </a>
+        </div>
+    </div>
+</div>
 </div>

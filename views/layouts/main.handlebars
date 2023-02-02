@@ -10,7 +10,11 @@
   <link rel="icon" href="../../img/favicon-192x192.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="../../img/favicon-180x180.png" />
   <meta name="msapplication-TileImage" content="../../img/favicon-270x270.png" />
-  <title>Service simple</title>
+  {{#if title}}
+  <title>{{ title }}</title>
+  {{else}}
+  <title>WEB to PDF</title>
+  {{/if}}
   <!-- FONTS -->
   <link
     href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Poppins:300,400,400i,600|Source+Sans+Pro:400,400i,600,700,900|Mukta:400,700,800|Oswald:400,600|Lato:400,400i,700|Roboto:300,400,500,700|Roboto+Slab:400,700|Playfair+Display:400,400i,700i,700|Catamaran:300,400,500,600,700,900|Merriweather:400,700|Montserrat:400,500,600|Nunito|Open+Sans:300,400,500,600|Caveat:400,700|Dancing+Script|Libre+Baskerville:400,700"
@@ -52,7 +56,7 @@
       <div class="main-header__menu-wrap">
         <div class="main-header__fluid-container no-lr-padd-sm">
           <div class="main-header__main-line">
-            <a href="../../karma/index.html" class="aheto-logo aheto-logo--dark main-header__logo">
+            <a href="/" class="aheto-logo aheto-logo--dark main-header__logo">
               <img src="../../img/home/footer-logo-11.png" class="aheto-logo__image logo-blue" alt="">
               <img src="../../img/home/logo_w.png" class="aheto-logo__image logo-white" alt="">
               <h1 class="aheto-logo__text">Karma</h1>
@@ -62,161 +66,10 @@
                 <ul
                   class="main-menu main-menu--mobile-view  main-menu--dark main-menu--inline main-menu--ci-line-abow main-menu--ddt-default main-menu--ddc-white">
                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu ">
-                    <a href="../../karma/index.html">Home</a>
+                    <a href="/">Inicio</a>
                   </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <div class="sub-menu menu-depth-1 mega-menu">
-                      <div class="mega-menu__col">
-                        <h4 class="mega-menu__title">Elements 01</h4>
-                        <ul class="mega-menu__list">
-                          <li class="menu-item"><a href="../../karma/about/about-classic.html">About
-                              classic</a></li>
-                          <li class="menu-item"><a href="../../karma/about/about-simple.html">About simple</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/about/about-modern.html">About modern</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/service/service-classic.html">Service
-                              classic</a></li>
-                          <li class="menu-item"><a href="../../karma/service/service-simple.html">Service
-                              simple</a></li>
-                          <li class="menu-item"><a href="../../karma/service/service-modern.html">Service
-                              modern</a></li>
-                          <li class="menu-item"><a href="../../karma/service/service-details.html">Service
-                              details</a></li>
-                          <li class="menu-item"><a href="../../karma/forum/forum.html">Forum</a></li>
-                          <li class="menu-item"><a href="../../karma/forum/forum-category.html">Forum
-                              category</a></li>
-                          <li class="menu-item"><a href="../../karma/page-template/page-fullwidth.html">Page
-                              fullwidth</a></li>
-                          <li class="menu-item"><a href="../../karma/page-template/page-2-sidebars.html">Page 2
-                              sidebar</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-menu__col">
-                        <h4 class="mega-menu__title">Elements 02</h4>
-                        <ul class="mega-menu__list">
-                          <li class="menu-item"><a href="../../karma/additional-page/author-bio.html">Author
-                              bio</a></li>
-                          <li class="menu-item"><a href="../../karma/additional-page/coming-soon.html">Coming
-                              soon</a></li>
-                          <li class="menu-item"><a href="../../karma/additional-page/search-results.html">Search
-                              results</a></li>
-                          <li class="menu-item"><a href="../../karma/additional-page/404-page.html">404
-                              page</a></li>
-                          <li class="menu-item"><a href="../../karma/pricing/pricing-01.html">Pricing 01</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/pricing/pricing-02.html">Pricing 02</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/pricing/pricing-03.html">Pricing 03</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/FAQ/faq.html">F.A.Q.</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/forum/forum-single.html">Forum single</a>
-                          </li>
-                          <li class="menu-item"><a href="../../karma/page-template/page-left-sidebar.html">Page
-                              left sidebar</a></li>
-                          <li class="menu-item"><a href="../../karma/page-template/page-right-sidebar.html">Page
-                              right sidebar</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                    <a href="#">Portfolio</a>
-                    <ul class="sub-menu menu-depth-1">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-metro.html">Portfolio
-                          metro</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-grid.html">Portfolio grid</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-masonry.html">Portfolio
-                          masonry</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-new.html">Portfolio new</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-01.html">Portfolio
-                          details 01</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-02.html">Portfolio
-                          details 02</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-03.html">Portfolio
-                          details 03</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-04.html">Portfolio
-                          details 04</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-05.html">Portfolio
-                          details 05</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-06.html">Portfolio
-                          details 06</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/portfolio/portfolio-details-07.html">Portfolio
-                          details 07</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu menu-depth-1">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/blog-metro.html">Blog metro</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/blog-grid.html">Blog grid</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/blog-centered.html">Blog centered</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/blog-small.html">Blog small</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/blog-masonry.html">Blog masonry</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/single-post-fullwidth.html">Single post
-                          fullwidth</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/single-post-with-right-sidebar.html">Single
-                          post with right sidebar</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/single-post-with-left-sidebar.html">Single
-                          post with left sidebar</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/blog/single-post-with-two-sidebars.html">Single
-                          post with two sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                    <a href="#">Shop</a>
-                    <ul class="sub-menu menu-depth-1">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/shop/shop.html">Shop</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/shop/product-details.html">Product details</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/shop/checkout.html">Checkout</a></li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/shop/cart.html">Cart</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                    <a href="#">Contact</a>
-                    <ul class="sub-menu menu-depth-1">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/contact/contact-simple.html">Contact simple</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/contact/contact-modern.html">Contact modern</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/contact/contact-sidebar.html">Contact sidebar</a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                          href="../../karma/contact/contact-multi-locations.html">Contact
-                          multi locations</a></li>
-                    </ul>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu ">
+                    <a href="https://github.com/dluccajose">Github</a>
                   </li>
                 </ul>
               </nav>
