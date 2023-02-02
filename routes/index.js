@@ -1,4 +1,5 @@
 var express = require('express');
+const crypto = require('crypto');
 var router = express.Router();
 const urlConverter = require('../urlConverter')
 
@@ -10,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/pdf', async function (req, res) {
   const url = req.body.url;
   const storagePath = '/storage/public/'
-  const fileName = 'convert.pdf'
+  const fileName = crypto.randomUUID() + '.pdf';
 
   const options = {
     pdfOptions: {
@@ -26,7 +27,7 @@ router.post('/pdf', async function (req, res) {
 
   await urlConverter.urlToPDF(url, options)
 
-  res.render('pdf_generated',  {pdfUrl: `${process.env.URL}/${fileName}`})
+  res.render('pdf_generated',  {pdfUrl: `${process.env.URL}/${fileName}`, title: 'Conversion lista - Descargar PDF'})
 })
 
 module.exports = router;
