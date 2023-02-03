@@ -3,3 +3,7 @@ A simple  node project web utility to convert webpages to PDF files. This projec
 
 # Demo
 Demo project: http://146.190.148.147:3000/
+
+# Next features
+- API
+- Set diferrentes options for the coversion ti PDF (like screen sizes, sleep times, size print styles...)
