@@ -77,7 +77,7 @@ async function urlToPDF(url, {
         const pdf = await page.pdf(pdfOptions);
 
         await browser.close();
-    catch (err) {
+    } catch (err) {
         await browser.close();
         throw err
     }
