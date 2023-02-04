@@ -58,25 +58,30 @@ async function urlToPDF(url, {
     }
 
     const browser = await puppeteer.launch(puppeteerOptions);
-
-    const page = await browser.newPage();
-
-    await page.goto(url, {
-        waitUntil: ['load', 'domcontentloaded', 'networkidle0'],
-    })
-
-    if (emulateMediaType) {
-        await page.emulateMediaType(emulateMediaType);
-    }
-
-    if (sleepTime) {
-        await sleep(sleepTime);
-    }
-
-    const pdf = await page.pdf(pdfOptions);
-        
-    await browser.close();
     
+    try {
+        const page = await browser.newPage();
+
+        await page.goto(url, {
+            waitUntil: ['load', 'domcontentloaded', 'networkidle0'],
+        })
+
+        if (emulateMediaType) {
+            await page.emulateMediaType(emulateMediaType);
+        }
+
+        if (sleepTime) {
+            await sleep(sleepTime);
+        }
+
+        const pdf = await page.pdf(pdfOptions);
+
+        await browser.close();
+    catch (err) {
+        await browser.close();
+        throw err
+    }
+
     return pdf
 }
 
