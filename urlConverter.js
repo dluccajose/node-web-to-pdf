@@ -58,6 +58,7 @@ async function urlToPDF(url, {
     }
 
     const browser = await puppeteer.launch(puppeteerOptions);
+    let pdf
     
     try {
         const page = await browser.newPage();
@@ -74,7 +75,7 @@ async function urlToPDF(url, {
             await sleep(sleepTime);
         }
 
-        const pdf = await page.pdf(pdfOptions);
+        pdf = await page.pdf(pdfOptions);
 
         await browser.close();
     } catch (err) {
