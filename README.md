@@ -1,9 +1,9 @@
 # node-web-to-pdf
-A simple  node project web utility to convert webpages to PDF files. This project use express and puppeters to transform webs into PDF
+A simple node web project utility to convert webpages into PDF files. This project use express and puppeteer to transform webs into PDF
 
 # Features
 - Web server with express
-- Convert webs to PDF using puppeter
+- Convert webs to PDF using puppeteer
 - Resource limiter middleware to avoid bringing down the server
 - Log request using morgan
 
