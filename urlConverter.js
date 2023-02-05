@@ -44,7 +44,7 @@ async function urlToPDF(url, {
     const defaultPdfOptions = {
         margin: { top: '100px', right: '50px', bottom: '100px', left: '50px' },
         printBackground: true,
-        format: 'A4',
+        scale: 0.5,
     }
 
     puppeteerOptions = {

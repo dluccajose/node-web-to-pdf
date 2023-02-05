@@ -20,7 +20,7 @@ router.post('/pdf', async function (req, res) {
     },
     puppeteerOptions: {
       args: [
-        '--window-size=3500,768',
+        '--window-size=1366,768',
         '--no-sandbox', 
         '--disable-setuid-sandbox',
       ],
