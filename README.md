@@ -8,7 +8,7 @@ A simple node web project utility to convert webpages into PDF files. This proje
 - Log request using morgan
 
 # Demo
-Demo project: http://146.190.148.147:3000/
+Demo project: http://webtopdf.dlucca.dev/
 
 # Next features
 - API
